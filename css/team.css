@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: medium;
+    font-weight: 500;
+   
+}
+
+body{
+    background-color:#1b1b32;
+    color: white;
+}
+
+.post{
+    color: #0067f7;
+}
+
+nav{
+    background-color:#1b1b32;
+    height: 80px;
+}
+
+#nav-logo{
+    height: 70px;
+    border-radius: 150px;
+    margin: 5px;
+}
+
+.nav-ele{
+    position: absolute;
+    right: 5%;
+    top:7%;
+}
+
+.dropdown{
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    right: 7%;
+    display: none;
+}
+
+.dropdown li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+
+.dropdown ul li a{
+    text-decoration: none;
+}
+
+#drop-logo{
+
+    width: 50px;
+    border-radius: 10px;
+    position: absolute;
+    right: 7%;
+    top:0.1%;
+    margin:15px;
+    display: none;
+}
+
+
+
+nav a{
+    margin-left:6px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    bottom: 25px;
+}
+
+a:hover{
+    color: #0067f7;
+    text-decoration: underline;
+}
+
+
+
+/* #deekshita{
+    position: relative;
+    left: 50px;
+} */
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.gallery2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    gap:20px
+}
+
+.gallery img{
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.card{
+    text-align: center;
+}
+
+
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.heading{
+    margin: 20px;
+    font-size: 20px;
+}
+
+h1,h3{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color:#1b1b32;
+    color: white;
+    height: 50%;
+    
+}
+
+footer a,p{
+ margin: 10px;
+}
+
+.gallery img:hover{
+    /* background: linear-gradient(to right, #016cec, #0067f7); */
+    padding: 10px;
+    position: relative;
+    
+    border: 4px dashed transparent;
+    transition: padding .3s;
+    box-shadow: 5px 10px 10px 1px #0067f7;
+  
+}
+
+/* .gallery img:hover .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+} */
+
+.gallery2 img:hover{
+    /* background: linear-gradient(to right, #016cec, #0067f7); */
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    border: 4px dashed transparent;
+    transition: padding .3s;
+    box-shadow: 5px 10px 10px 1px #0067f7;
+}
+
+.team-drop{
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    right: 30%;
+    top:8%;
+    display: none;
+}
+
+.team-drop li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    margin: 10px;
+}
+
+.team-drop ul li a{
+    text-decoration: none;
+}
+
+.social{
+    /* background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    top: 600px;
+    border-radius: 200px; */
+    /* display: none;  */
+    
+   
+}
+
+ion-icon{
+    color: wheat;
+    font-size: 30px;
+    margin: 0 10px 0 10px;
+}
+
+
+
+
+@media screen and (width<=600px) {
+    nav a{
+        display:none;
+    }
+    #drop-logo{
+        display: inline-block;
+    }
+    
+    #nav-logo{
+        height: 60px;
+        border-radius: 150px;
+        margin: 8px;
+    }
+}

@@ -1,0 +1,157 @@
+body{
+    background-color:#1b1b32;
+}
+
+.card1{
+    margin: 10px;
+    padding: 10px;
+    min-height: fit-content;
+    width: 80vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #141425; */
+    border: none;
+    border-radius: 10px;
+
+}
+
+h2{
+    text-align: center;
+}
+
+.im{
+    width: 75vh;
+}
+
+.card2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin: 10px; */
+    margin-left: auto;
+    margin-right: auto;
+    gap:20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.im1{
+    width: 75vh;
+}
+
+.im3{
+    width: 60vh;
+}
+.im4{
+    width: 60vh;
+    height: 60vh;
+}
+p{
+    text-align: center;
+}
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    
+}
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    background: rgb(0, 0, 0,0.3);
+}
+
+.text-box{
+   padding: 20px 30px;
+   position: relative;
+   border-radius: 6px;
+   font-size: 15px;
+ }
+
+ h1{
+    text-align: center;
+ }
+
+
+.left-container{
+    left: 0;
+}
+
+.right-container{
+    left: 50%;
+}
+
+.container img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img{
+    left: -20px;
+}
+
+.timeline::after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 55%;
+  margin-left: -3px;
+  z-index: -1;
+
+}
+
+@media screen and (width<=600px) {
+    .im{
+        width: 40vh;
+    }
+    .im1{
+      width: 30vh;
+
+    }
+    .im3{
+        width: 40vh;
+    }
+    .im4{
+        width: 50vh;
+        height: 50vh;
+    }
+    .card1{
+        width: 40vh;
+    }
+}
+
+@media screen and (width>=600px) and (width<=1023px) {
+    .im{
+        width: 35vh;
+    }
+    .card1{
+        width: 30vh;
+    }
+    .im1{
+        width: 30vh;
+    }
+}
+
+@media  screen and (width>=1023px) and (height>1000px) {
+    .im{
+        width: 35vh;
+    }
+.card1{
+    width: 30vh;
+}
+.im1{
+    width: 30vh;
+}
+}
